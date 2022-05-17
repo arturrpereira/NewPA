@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Scripts -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <title>Index</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegação-->
+    <header>
+        <div class="container" id="nav-container">
+          
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="img/logo.png" alt="PetLogo Error!"> Pet Logo
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="index.html">Home</span></a>
+                        <a class="nav-item nav-link" id="about-menu" href="#">Cadastro</a>
+                        <a class="nav-item nav-link" id="services-menu" href="#">Pedidos</a>
+                        <a class="nav-item nav-link" id="services-menu" href="#">Catálogo Produtos</a>
+                        <a class="nav-item nav-link" id="services-menu" href="#">Tabela de Serviços</a>
+                    </div>
+                    <a class="nav-item nav-link" href="login.html">Sair</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <!-- Conteiner -->
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner.png" class="d-block w-100" alt="ProjetoPetLogo">
+              <div class="carousel-caption d-md-block">
+                <h2 id="h2carousel">PET LOGO <img src="img/logo.png"> </h2>
+                <p id="pcarousel">A Tecnologia combina com a gente, com você e com o seu Pet...<br>Nossa equipe está totalmente preparada para fazer seu animalzinho parte da familia !!</p>
+              </div>
+            </div> 
+            <div class="carousel-item">
+              <img src="img/banner1.png " class="d-block w-100" alt="Engenharia de software">
+              <div class="carousel-caption d-md-block">
+                <h2 id="h2item">Seja assinante Pet Logo</h5>
+                  <ul id="ulitem">
+                    <li><h5>Assine e Cancele sem custos;</h5></li>
+                    <li><h5>5% Off para retirar seu pedido na loja;</h5></li>
+                    <li><h5>Frete grátis;</h5></li>
+                    <li><h5>20% OFF no banho e tosa.</h5></li>
+                  </ul>
+              </div>  
+            </div>
+          <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- Sobre a empresa -->
+        <div id="about-area">
+          <div class="container">
+              <div class="row">
+                <div class="col-12"> 
+                  <h3 class="main-title">Sobre a PET LOGO</h3>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid" src="img/banner6.png" alt="PetLogo Error">
+                </div>
+                <div class="col-md-6">
+                  <h3 class="about-title">Uma empresa que pensa no seu Pet</h3>
+                  <p>Nossos projetos são adaptados para o bem estar de seu animalzinho.</p>
+                  <p></p>
+                  <ul id="about-list">
+                    <li><i class="fas fa-check"></i> Somos apaixonados por pets;</li>
+                    <li><i class="fas fa-check"></i> Reconhecemos esforços, premiamos resultados;</li>
+                    <li><i class="fas fa-check"></i> Especialistas com ampla experiencia; </li>
+                    <li><i class="fas fa-check"></i> Temos prazer em servir;</li>
+                    <li><i class="fas fa-check"></i> Dispomos dos melhores materiais e estrutura.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+       
+        <!-- Time -->
+        <div id="team-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title">Nosso time</h3>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile1.jpg" class="card-img-top" alt="Imagem de Perfil 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Lucas Carmo</h5>
+                    <p class="card-text">Software Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de Perfil 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Artur Pereira</h5>
+                    <p class="card-text">SEO Consultant</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile3.jpg" class="card-img-top" alt="Imagem de Perfil 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Felipe</h5>
+                    <p class="card-text">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile4.jpg" class="card-img-top" alt="Imagem de Perfil 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Reinaldo</h5>
+                    <p class="card-text">UX/UI Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img/profile3.jpg" class="card-img-top" alt="Imagem de Perfil 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Jefferson</h5>
+                    <p class="card-text">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Orçamento -->
+        <div id="call-area">
+          <div class="container">
+              <div class="row">
+                <p>Deseja fazer um orçamento sem compromisso?</p>
+                <button class="main-btn" id="call-btn">Orçar</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div id="contact-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="main-title">Contatos Pet Logo</h3>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fas fa-phone"></i>
+                <p><span class="contact-tile">Ligue para:</span> (19)99999-9999</p>
+                <p><span class="contact-tile">Horários:</span> 8:00 - 19:00</p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fas fa-envelope"></i>
+                <p><span class="contact-tile">Envie um email:</span> contato@petlogo.com.br</p>
+              </div>
+              <div class="col-md-4 contact-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><span class="contact-tile">Endereço:</span> Rua Aurora Macedo - 2654</p>
+              </div>
+         <!-- Desenvolvimento -->
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <p>Desenvolvido por <a href="index.html" target="_blank">GrupoAlunosFHO</a> &copy; 2022</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
