@@ -157,7 +157,7 @@ header, .navbar {
 /* Call To Action */
 
 #call-area {
-  background-color: #65DAF9;
+  background-color: #444;
   text-transform: uppercase;
 }
 
@@ -182,8 +182,8 @@ header, .navbar {
 }
 
 #call-area #call-btn {
-  background-color: #FFF;
-  color: #65DAF9;
+  background-color: yellow;
+  color: black;
   font-weight: bold;
   margin-left: 30px;
   font-size: 20px;
@@ -411,4 +411,158 @@ header, .navbar {
 #Atualizar {
   color: black  ;
   background-color: #f0ed46;
+}
+
+/* Cadastros */
+
+* {
+  font-family: 'Prompt', sans-serif;
+}
+
+.form-container {
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+  position: relative;
+}
+
+#form-signup-heading{
+  text-align: center;
+  color: black;
+}
+
+.form-signup {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signup .form-signup-heading,.form-signup .input-box{
+  margin-bottom: 10px;
+}
+
+.form-signup .form-control {
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.btn-primary, .btn-primary:hover{
+  background-color: #333;
+  border-color: #333;
+}
+
+/* PET */
+#cadastropet {
+  content: "";
+  background-image: url(../img/Wallpaper.png);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
+}
+
+/* Cargo */
+#cadastrocargo {
+  content: "";
+  background-image: url(../img/Wallpaper3.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
+}
+
+/* Cliente */
+#cadastrocliente {
+  content: "";
+  background-image: url(../img/Wallpaper2.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
+}
+
+/* Usuário */
+#cadastrousuario {
+  content: "";
+  background-image: url(../img/Wallpaper5.png);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
+}
+
+#h2usuario{
+  text-align: center;
+  color: white
+}
+
+#botaousuario {
+  color: black;
+  font-weight: bolder;
+}
+
+#voltar {
+  color: black;
+}
+
+/* Funcionario */
+#cadastrofuncionario {
+  height: 120vh;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  display: block;
+  position: relative;
+
+  content: "";
+  background-image: url(../img/Wallpaper3.jpeg);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
+}
+
+#cadastrofuncionario label {
+  color: black;
+  font-weight: bolder;
+}
+
+/* Usuário */
+#cadastroservico {
+  content: "";
+  background-image: url(../img/wallpaperPet.png);
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  z-index: -1;
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cliente</title>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <section class="form-container" id="cadastrocliente">
+        <div class="container-fluid">
+            <form class="form-signup" id="">
+                <h2 id="form-signup-heading"> Cadastro de Cliente </h2>
+                <div class="id-container input-box">
+                    <input type="number" id="idcliente" class="form-control" placeholder="ID Cliente" disabled>
+                </div>
+                <div class="name-container input-box">
+                    <input type="text" id="namecliente" class="form-control" placeholder="Nome do Cliente" required>
+                </div>
+                <div class="rg-container input-box">
+                    <input type="text" id="rgcliente" class="form-control" placeholder="RG" required>
+                </div>
+                <div class="email-container input-box">
+                    <input type="email" id="emailcliente" class="form-control" placeholder="Email"required>
+                </div>
+                <div class="cpf-container input-box">
+                    <input type="text" id="cpfcliente" class="form-control" placeholder="CPF" required>
+                </div>
+                <div class="telefone-container input-box">
+                    <input type="tel" id="telcliente" class="form-control" placeholder="Telefone" required>
+                </div>
+                <div class="nascimento-container input-box">
+                    <input type="date" id="nascimentocliente" class="form-control" placeholder="Data de Nascimento" required>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
+                <button class="btn btn-sm btn-primary btn-block submit-btn" type="reset">Limpar</button>    
+            </form>
+            <a href="escolhacadastro.html" class="btn btn-sm btn-primary" role="button" aria-disabled="true">Voltar</a>
+        </div>
+    </section>
+</body>
+
+</html>

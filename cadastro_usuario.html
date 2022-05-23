@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Usuário</title>
+
+    <!-- Scripts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <section class="form-container" id="cadastrousuario">
+        <div class="container-fluid">
+            <form class="form-signup" id="">
+                <h2 id="h2usuario"> Cadastro de Usuários </h2>
+                <div class="id-container input-box">
+                    <input type="number" id="idusuario" class="form-control" placeholder="ID Usuário" disabled>
+                </div>
+                <div class="nome-container input-box">
+                    <input type="text" id="nomeusuario" class="form-control" placeholder="Nome do Usuário" required>
+                </div>
+                <div class="login-container input-box">
+                    <input type="text" id="loginusuario" class="form-control" placeholder="Login" required>
+                </div>
+                <div class="senha-container input-box">
+                    <input type="password" id="senhausuario" class="form-control" placeholder="Senha Usuário" required>
+                </div>
+                <button class="btn btn-lg btn-warning btn-block submit-btn" id="botaousuario" type="submit">Registrar</button>
+                <button class="btn btn-sm btn-warning btn-block submit-btn" id="botaousuario" type="reset">Limpar</button>    
+            </form>
+            <a href="escolhacadastro.html" class="btn btn-sm btn-warning" id="voltar" role="button" aria-disabled="true">Voltar</a>
+        </div>
+    </section>
+</body>
+
+</html>
