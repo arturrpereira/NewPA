@@ -20,7 +20,8 @@
       if(isset($_GET['id'])) 
         $model = $model->getById( (int) $_GET['id']); 
 
-      include 'View/modules/Pessoa/FormPessoa.php'; 
+      echo "teste" ;
+      include 'View/modules/Cargo/formCargo.php'; 
     }
     
     public static function save()
@@ -29,14 +30,14 @@
 
        $model = new Cargo();
 
-       $model->id_cargo =  $_POST['id_cargo'];
+       // $model->id_cargo =  $_POST['id_cargo'];
        $model->desc_cargo = $_POST['desc_cargo'];
        $model->salario_cargo = $_POST['salario_cargo'];
        $model->nivel_cargo = $_POST['nivel_cargo'];
-
+      
        $model->save(); 
-
-       header("Location: /cargo"); 
+       // echo "teste";
+       // header("Location: /cargo"); 
     }
 
     public static function delete() {

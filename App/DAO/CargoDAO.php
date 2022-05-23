@@ -6,7 +6,7 @@
 
         public function __construct() {
             
-            $endereco = '172.22.4.174';
+            $endereco = 'localhost';
             $banco = 'db_pa';
             $usuario = 'postgres';
             $senha = '031298';
