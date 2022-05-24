@@ -16,33 +16,35 @@
 
         public function insert(Pet $model) {
 
-            $sql = "INSERT INTO Pet (nome_pet, sexo_pet, tipo_pet, raca_pet, fk_id_cliente, fk_id_usuario) VALUES (?, ?, ?, ?, ?, ?) ";
+            $sql = "INSERT INTO Pet (nome_pet, idade_pet, raca_pet, porte_pet, cor_pet, fk_id_cliente, fk_id_usuario) VALUES (?, ?, ?, ?, ?, ?, ?) ";
 
             $stmt = $this->conexao->prepare($sql);
 
             $stmt->bindValue(1, $model->nome_pet);
-            $stmt->bindValue(2, $model->sexo_pet);
-            $stmt->bindValue(3, $model->tipo_pet);
-            $stmt->bindValue(4, $model->raca_pet);
-            $stmt->bindValue(5, $model->fk_id_cliente);
-            $stmt->bindValue(6, $model->fk_id_usuario);
+            $stmt->bindValue(2, $model->idade_pet);
+            $stmt->bindValue(3, $model->raca_pet);
+            $stmt->bindValue(4, $model->porte_pet);
+            $stmt->bindValue(5, $model->cor_pet);
+            $stmt->bindValue(6, $model->fk_id_cliente);
+            $stmt->bindValue(7, $model->fk_id_usuario);
 
             $stmt->execute();
         }
 
         public function update(Pet $model) {
 
-            $sql = "UPDATE Pet SET nome_pet=?, sexo_pet=?, tipo_pet=?, raca_pet=?, fk_id_cliente=?, fk_id_usuario WHERE id_pet=?";
+            $sql = "UPDATE Pet SET nome_pet=?, idade_pet=?, raca_pet=?, porte_pet=?, cor_pet=?, fk_id_cliente=?, fk_id_usuario=? WHERE id_pet=?";
 
             $stmt = $this->conexao->prepare($sql);
 
             $stmt->bindValue(1, $model->nome_pet);
-            $stmt->bindValue(2, $model->sexo_pet);
-            $stmt->bindValue(3, $model->tipo_pet);
-            $stmt->bindValue(4, $model->raca_pet);
-            $stmt->bindValue(5, $model->fk_id_cliente);
-            $stmt->bindValue(6, $model->fk_id_usuario);
-            $stmt->bindValue(7, $model->id_pet);
+            $stmt->bindValue(2, $model->idade_pet);
+            $stmt->bindValue(3, $model->raca_pet);
+            $stmt->bindValue(4, $model->porte_pet);
+            $stmt->bindValue(5, $model->cor_pet);
+            $stmt->bindValue(6, $model->fk_id_cliente);
+            $stmt->bindValue(7, $model->fk_id_usuario);
+            $stmt->bindValue(8, $model->id_pet);
 
             $stmt->execute();
         }

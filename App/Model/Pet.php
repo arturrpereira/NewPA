@@ -4,9 +4,10 @@
 
     public $id_pet;
     public $nome_pet;
-    public $sexo_pet;
-    public $tipo_pet;
+    public $idade_pet;
     public $raca_pet;
+    public $porte_pet;
+    public $cor_pet;
     public $fk_id_cliente;
     public $fk_id_usuario;
 
