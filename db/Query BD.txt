@@ -1,0 +1,13 @@
+------------Tabela Funcionarios-------------
+CREATE TABLE IF NOT EXISTS Funcionario (
+  id_funcionario Serial NOT NULL,
+  nome_funcionario VARCHAR(45) NOT NULL,
+  rg_funcionario VARCHAR(45) NOT NULL,
+  cpf_funcionario VARCHAR(45) NOT NULL,
+  endereco_funcionario VARCHAR(45) NOT NULL,
+  dataAdmissao_funcionario VARCHAR(45) NOT NULL,
+  dataNasc_funcionario VARCHAR(45) NOT NULL,
+  genero_funcionario VARCHAR(45) NOT NULL,
+  telefone_funcionario VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id_funcionario))
+----------------------------------------------
