@@ -17,16 +17,16 @@
 <body>
     <section class="form-container" id="cadastropet">
         <div class="container-fluid">
-            <form class="form-signup" id="">
+            <form class="form-signup" method="POST" action="pet/form/save" id="">
                 <h2 id="form-signup-heading"> Cadastro de Pet </h2>
                 <div class="name-container input-box">
-                    <input type="text" id="namepet" class="form-control" placeholder="Insira o nome do Pet" required>
+                    <input type="text" name="nome_pet" id="namepet" class="form-control" placeholder="Insira o nome do Pet" required>
                 </div>
                 <div class="idade-container input-box">
-                    <input type="number" id="idadepet" class="form-control" placeholder="Idade do Pet" required>
+                    <input type="number" name="idade_pet" id="idadepet" class="form-control" placeholder="Idade do Pet" required>
                 </div>
                 <div class="form-group">
-                    <select class="form-control" id="tipopet">
+                    <select class="form-control" name="tipo_pet" id="tipopet">
                         <option value="0">Selecione o Tipo do Pet</option>
                         <option value="caes">Cães</option>
                         <option value="gatos">Gatos</option>
@@ -37,13 +37,13 @@
                     </select>
                 </div>
                 <div class="raca-container input-box">
-                    <input type="text" id="racapet" class="form-control" placeholder="Raça Pet *Opcional*">
+                    <input type="text" name="raca_pet" id="racapet" class="form-control" placeholder="Raça Pet *Opcional*">
                 </div>
                 <div class="porte-container input-box">
-                    <input type="text" id="portepet" class="form-control" placeholder="Porte do Animal" required>
+                    <input type="text" name="porte_pet" id="portepet" class="form-control" placeholder="Porte do Animal" required>
                 </div>
                 <div class="cor-container input-box">
-                    <input type="text" id="corpet" class="form-control" placeholder="Cor do Pet  *Opcional*">
+                    <input type="text" name="cor_pet" id="corpet" class="form-control" placeholder="Cor do Pet  *Opcional*">
                 </div>
                 <div class="fkcliente-container input-box col-md-8">
                     <input type="number" id="fkcliente" class="form-control" placeholder="Código do Cliente do PET">

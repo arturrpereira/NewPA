@@ -30,14 +30,13 @@
 
        $model = new Cargo();
 
-       // $model->id_cargo =  $_POST['id_cargo'];
+       $model->id_cargo =  $_POST['id_cargo'];
        $model->desc_cargo = $_POST['desc_cargo'];
        $model->salario_cargo = $_POST['salario_cargo'];
        $model->nivel_cargo = $_POST['nivel_cargo'];
       
        $model->save(); 
-       // echo "teste";
-       // header("Location: /cargo"); 
+       header("Location: /index"); 
     }
 
     public static function delete() {

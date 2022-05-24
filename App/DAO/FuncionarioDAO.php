@@ -21,13 +21,13 @@
             $stmt = $this->conexao->prepare($sql);
 
             $stmt->bindValue(1, $model->nome_funcionario);
-            $stmt->bindValue(1, $model->rg_funcionario);
-            $stmt->bindValue(1, $model->cpf_funcionario);
-            $stmt->bindValue(1, $model->endereco_funcionario);
-            $stmt->bindValue(1, $model->dataAdmissao_funcionario);
-            $stmt->bindValue(1, $model->dataNasc_funcionario);
-            $stmt->bindValue(1, $model->genero_funcionario);
-            $stmt->bindValue(2, $model->telefone_funcionario);
+            $stmt->bindValue(2, $model->rg_funcionario);
+            $stmt->bindValue(3, $model->cpf_funcionario);
+            $stmt->bindValue(4, $model->endereco_funcionario);
+            $stmt->bindValue(5, $model->dataAdmissao_funcionario);
+            $stmt->bindValue(6, $model->dataNasc_funcionario);
+            $stmt->bindValue(7, $model->genero_funcionario);
+            $stmt->bindValue(8, $model->telefone_funcionario);
 
             $stmt->execute();
         }

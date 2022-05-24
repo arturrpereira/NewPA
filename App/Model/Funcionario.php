@@ -18,7 +18,7 @@
 
       include 'DAO/FuncionarioDAO.php';
 
-      $dao = new CargoDAO();
+      $dao = new FuncionarioDAO();
 
       if(empty($this->id)){
 
@@ -30,7 +30,7 @@
 
       include 'DAO/FuncionarioDAO.php';
       
-      $dao = new CargoDAO();
+      $dao = new FuncionarioDAO();
 
       $this->rows = $dao->select();
     }
@@ -39,11 +39,11 @@
 
       include 'DAO/FuncionarioDAO.php'; 
       
-      $dao = new CargoDAO();
+      $dao = new FuncionarioDAO();
 
       $obj = $dao->selectById($id); 
 
-      return ($obj) ? $obj : new Cargo(); 
+      return ($obj) ? $obj : new Funcionario(); 
 
         /*if($obj)
         {
@@ -57,7 +57,7 @@
 
         include 'DAO/FuncionarioDAO.php'; 
 
-        $dao = new CargoDAO();
+        $dao = new FuncionarioDAO();
 
         $dao->delete($id);
     }
