@@ -1,13 +1,63 @@
-------------Tabela Funcionarios-------------
-CREATE TABLE IF NOT EXISTS Funcionario (
-  id_funcionario Serial NOT NULL,
-  nome_funcionario VARCHAR(45) NOT NULL,
-  rg_funcionario VARCHAR(45) NOT NULL,
-  cpf_funcionario VARCHAR(45) NOT NULL,
-  endereco_funcionario VARCHAR(45) NOT NULL,
-  dataAdmissao_funcionario VARCHAR(45) NOT NULL,
-  dataNasc_funcionario VARCHAR(45) NOT NULL,
-  genero_funcionario VARCHAR(45) NOT NULL,
-  telefone_funcionario VARCHAR(45) NOT NULL,
-  PRIMARY KEY (id_funcionario))
-----------------------------------------------
+CREATE TABLE IF NOT EXISTS Funcionario  (
+   id_funcionario  Serial NOT NULL,
+   nome_funcionario  VARCHAR(45) NOT NULL,
+   rg_funcionario  VARCHAR(45) NOT NULL,
+   cpf_funcionario  VARCHAR(45) NOT NULL,
+   endereco_funcionario  VARCHAR(45) NOT NULL,
+   dataAdmissao_funcionario  VARCHAR(45) NOT NULL,
+   dataNasc_funcionario  VARCHAR(45) NOT NULL,
+   genero_funcionario  VARCHAR(45) NOT NULL,
+   telefone_funcionario  VARCHAR(45) NOT NULL,
+   fk_id_cargo  INT NOT NULL,
+  PRIMARY KEY ( id_funcionario ),
+  CONSTRAINT  fk_Funcionario_Cargo 
+    FOREIGN KEY ( fk_id_cargo )
+    REFERENCES Cargo  ( id_cargo ))
+
+
+CREATE TABLE IF NOT EXISTS Cargo(
+  id_cargo Serial NOT NULL,
+  desc_cargo VARCHAR(45) NOT NULL,
+  salario_cargo FLOAT NOT NULL,
+  nivel_cargo INT NOT NULL,
+  PRIMARY KEY (id_cargo))
+
+CREATE TABLE IF NOT EXISTS Usuario   (
+    id_usuario Serial NOT NULL,
+    nome_usuario VARCHAR(100) NULL,
+    login_usuario VARCHAR(45) NULL,
+    senha_usuario VARCHAR(45) NULL,
+    fk_id_funcionario INT NOT NULL,
+  PRIMARY KEY (  id_usuario  ),
+  CONSTRAINT fk_Usuario_Funcionario  
+    FOREIGN KEY (  fk_id_funcionario  )
+    REFERENCES Funcionario   (  id_funcionario  ))
+
+CREATE TABLE IF NOT EXISTS Cliente  (
+   id_cliente Serial NOT NULL,
+   nome_cliente VARCHAR(100) NULL,
+   rg_cliente VARCHAR(45) NULL,
+   email_cliente VARCHAR(50) NULL,
+   cpf_cliente VARCHAR(45) NULL,
+   telefone_cliente VARCHAR(45) NULL,
+   datanasc_cliente VARCHAR(45) NULL,
+  PRIMARY KEY ( id_cliente ))
+
+CREATE TABLE IF NOT EXISTS Pet  (
+   id_pet  Serial NOT NULL,
+   nome_pet  VARCHAR(50) NOT NULL,
+   idade_pet  VARCHAR(45) NOT NULL,
+   tipo_pet  VARCHAR(50) NOT NULL,	
+   raca_pet  VARCHAR(45) NOT NULL,
+   porte_pet  VARCHAR(45) NOT NULL,
+   cor_pet  VARCHAR(45) NOT NULL,
+   fk_id_cliente  INT NOT NULL,
+  PRIMARY KEY ( id_pet ),
+  CONSTRAINT  fk_Pet_Cliente 
+    FOREIGN KEY ( fk_id_cliente )
+    REFERENCES Cliente  ( id_cliente ))
+
+
+
+
+
