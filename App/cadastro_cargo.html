@@ -17,16 +17,16 @@
 <body>
     <section class="form-container" id="cadastrocargo">
         <div class="container-fluid">
-            <form class="form-signup" id="">
+            <form class="form-signup" method="POST" action="/cargo/form/save" id="">
                 <h2 id="form-signup-heading"> Cadastro de Cargo </h2>
                 <div class="descricao-container input-box">
-                    <input type="text" id="desccargo" class="form-control" placeholder="Descrição do Cargo" required>
+                    <input type="text" name="desc_cargo" id="desccargo" class="form-control" placeholder="Descrição do Cargo" required>
                 </div>
                 <div class="salario-container input-box">
-                    <input type="text" id="salariocargo" class="form-control" placeholder="Salario do Cargo - R$ 000,00" required>
+                    <input type="text" name="salario_cargo" id="salariocargo" class="form-control" placeholder="Salario do Cargo - R$ 000,00" required>
                 </div>
                 <div class="nivel-container input-box">
-                    <input type="number" id="nivelcargo" class="form-control" placeholder="Nivel do Cargo" required>
+                    <input type="number" name="nivel_cargo" id="nivelcargo" class="form-control" placeholder="Nivel do Cargo" required>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
                 <button class="btn btn-sm btn-primary btn-block submit-btn" type="reset">Limpar</button>    

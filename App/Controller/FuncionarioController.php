@@ -30,19 +30,18 @@
        $model = new Funcionario();
 
        $model->id_funcionario=  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->id_cargo =  $_POST['id_cargo'];
-       $model->desc_cargo = $_POST['desc_cargo'];
-       $model->salario_cargo = $_POST['salario_cargo'];
-       $model->nivel_cargo = $_POST['nivel_cargo'];
+       $model->nome_funcionario =  $_POST['nome_funcionario'];
+       $model->rg_funcionario =  $_POST['rg_funcionario'];
+       $model->cpf_funcionario =  $_POST['cpf_funcionario'];
+       $model->endereco_funcionario =  $_POST['endereco_funcionario'];
+       $model->dataAdmissao_funcionario =  $_POST['dataAdmissao_funcionario'];
+       $model->dataNasc_funcionario =  $_POST['dataNasc_funcionario'];
+       $model->genero_funcionario = $_POST['genero_funcionario'];
+       $model->telefone_funcionario = $_POST['telefone_funcionario'];
 
        $model->save(); 
 
-       header("Location: /cargo"); 
+       header("Location: /index"); 
     }
 
     public static function delete() {
@@ -53,7 +52,7 @@
 
         $model->delete( (int) $_GET['id_cargo'] ); 
 
-        header("Location: /cargo");
+        header("Location: /index");
     }
   }
 ?>
