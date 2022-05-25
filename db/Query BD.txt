@@ -58,6 +58,11 @@ CREATE TABLE IF NOT EXISTS Pet  (
     REFERENCES Cliente  ( id_cliente ))
 
 
+insert into cliente (nome_cliente,rg_cliente,email_cliente,cpf_cliente,telefone_cliente,datanasc_cliente)
+			 
+values ('Artur',46979608827,'artur.fernando@gmail.com',4158796502,8564785,'03/12/1998')
+
+
 
 
 
