@@ -5,11 +5,14 @@
         private $conexao;
 
         public function __construct() {
-            
-            $dsn = "mysql:host=localhost:3306;dbname=db_mvc";
+ 
+            $endereco = 'localhost';
+            $banco = 'db_pa';
+            $usuario = 'postgres';
+            $senha = '031298';
 
-            $this->conexao = new PDO($dsn, 'root', 'cajuru@2022');
-        }
+            $this->conexao = new PDO("pgsql:host=$endereco;port=5432;dbname=$banco", $usuario, $senha, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+       }
 
         public function insert(Cliente $model) {
 
@@ -38,7 +41,7 @@
 
         public function select() {
 
-            $sql = "SELECT * FROM pessoa ";
+            $sql = "SELECT * FROM Cliente ";
 
             $stmt = $this->conexao->prepare($sql);
             $stmt->execute();

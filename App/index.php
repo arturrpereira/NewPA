@@ -28,6 +28,11 @@ switch($url)
         CargoController::save();
     break;
 
+    case '/cliente/lista/index':
+        ClienteController::index();
+    break;
+
+
 
 
       
