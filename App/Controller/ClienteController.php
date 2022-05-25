@@ -9,7 +9,7 @@
         $model = new Cliente(); 
         $model->getAllRows(); 
 
-        include 'View/modules/Pessoa/ListaCliente.php'; 
+        include 'lista_cliente.php'; 
     }
 
     public static function form() {
@@ -40,7 +40,7 @@
 
        $model->save(); 
 
-       header("Location: /cliente"); 
+       header("Location: /index"); 
     }
 
     public static function delete() {
